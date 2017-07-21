@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile></DocumentationFile>
+    <NoWarn>1701;1702;1705;IDE0018;IDE0017</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>1701;1702;1705;IDE0018;IDE0017</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\WinUSBNet\API\APIException.cs" Link="API\APIException.cs" />
+    <Compile Include="..\WinUSBNet\API\DeviceDetails.cs" Link="API\DeviceDetails.cs" />
+    <Compile Include="..\WinUSBNet\API\DeviceManagement.cs" Link="API\DeviceManagement.cs" />
+    <Compile Include="..\WinUSBNet\API\DeviceManagementAPI.cs" Link="API\DeviceManagementAPI.cs" />
+    <Compile Include="..\WinUSBNet\API\FileAPI.cs" Link="API\FileAPI.cs" />
+    <Compile Include="..\WinUSBNet\API\WinUSBDevice.cs" Link="API\WinUSBDevice.cs" />
+    <Compile Include="..\WinUSBNet\API\WinUSBDeviceAPI.cs" Link="API\WinUSBDeviceAPI.cs" />
+    <Compile Include="..\WinUSBNet\DeviceNotifyHook.cs" Link="DeviceNotifyHook.cs" />
+    <Compile Include="..\WinUSBNet\USB.cs" Link="USB.cs" />
+    <Compile Include="..\WinUSBNet\USBAsyncResult.cs" Link="USBAsyncResult.cs" />
+    <Compile Include="..\WinUSBNet\USBDevice.cs" Link="USBDevice.cs" />
+    <Compile Include="..\WinUSBNet\USBDeviceDescriptor.cs" Link="USBDeviceDescriptor.cs" />
+    <Compile Include="..\WinUSBNet\USBDeviceInfo.cs" Link="USBDeviceInfo.cs" />
+    <Compile Include="..\WinUSBNet\USBException.cs" Link="USBException.cs" />
+    <Compile Include="..\WinUSBNet\USBInterface.cs" Link="USBInterface.cs" />
+    <Compile Include="..\WinUSBNet\USBInterfaceCollection.cs" Link="USBInterfaceCollection.cs" />
+    <Compile Include="..\WinUSBNet\USBNotifier.cs" Link="USBNotifier.cs" />
+    <Compile Include="..\WinUSBNet\USBPipe.cs" Link="USBPipe.cs" />
+    <Compile Include="..\WinUSBNet\USBPipeCollection.cs" Link="USBPipeCollection.cs" />
+    <Compile Include="..\WinUSBNet\USBPipePolicy.cs" Link="USBPipePolicy.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="API\" />
+  </ItemGroup>
+
+</Project>

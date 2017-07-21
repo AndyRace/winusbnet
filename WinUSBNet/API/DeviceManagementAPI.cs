@@ -9,6 +9,7 @@
  * See http://www.lvr.com/winusb.htm for more information
  */
 
+#if !NETCOREAPP2_0
 using System;
 using System.Runtime.InteropServices;
 
@@ -156,3 +157,4 @@ namespace MadWizard.WinUSBNet.API
         private const int ERROR_INSUFFICIENT_BUFFER = 122;
 	}
 }
+#endif

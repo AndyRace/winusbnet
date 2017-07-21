@@ -5,12 +5,13 @@
  *  http://www.opensource.org/licenses/mit-license.php
  */
 
+#if !NETCOREAPP2_0
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MadWizard.WinUSBNet.API
+ namespace MadWizard.WinUSBNet.API
 {
     internal struct DeviceDetails
     {
@@ -21,3 +22,4 @@ namespace MadWizard.WinUSBNet.API
         public ushort PID;
     }
 }
+#endif

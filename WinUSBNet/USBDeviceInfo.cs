@@ -5,6 +5,8 @@
  *  http://www.opensource.org/licenses/mit-license.php
  */
 
+#if !NETCOREAPP2_0
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -83,3 +85,5 @@ namespace MadWizard.WinUSBNet
 
     }
 }
+
+#endif

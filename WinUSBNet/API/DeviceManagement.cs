@@ -8,7 +8,7 @@
 /* NOTE: Parts of the code in this file are based on the work of Jan Axelson
  * See http://www.lvr.com/winusb.htm for more information
  */
-
+# if !NETCOREAPP2_0
 using System;
 using System.Runtime.InteropServices;
 using System.Collections.Generic;
@@ -308,3 +308,4 @@ namespace MadWizard.WinUSBNet.API
 		}
 	}
 }
+#endif
